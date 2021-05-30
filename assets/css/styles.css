@@ -357,6 +357,10 @@ img {
   font-weight: var(--font-medium);
 }
 
+.button {
+  border: none;
+}
+
 .button:hover {
   background-color: var(--first-color-alt);
 }
@@ -381,6 +385,12 @@ img {
   align-items: center;
 }
 
+.send--button {
+  font-size: var(--font-medium);
+  cursor: pointer;
+  font-family: "Poppins";
+}
+
 .button--small {
   padding: 0.75rem 1rem;
 }
@@ -402,6 +412,10 @@ img {
 
 .uil-elipsis-double-v-alt {
   font-size: 1.3rem;
+}
+
+.sendmsg {
+  font-size: var(--font-medium);
 }
 
 /*==================== ABOUT ====================*/
