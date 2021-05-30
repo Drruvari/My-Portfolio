@@ -404,15 +404,6 @@ img {
   font-size: 1.3rem;
 }
 
-.button__button {
-  border: none;
-  background: none;
-}
-
-#sendmsg {
-  font-size: var(--normal-font-size);
-}
-
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
