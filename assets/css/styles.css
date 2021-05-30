@@ -410,7 +410,7 @@ img {
 }
 
 #sendmsg {
-  font-size: var(--font-semi-bold);
+  font-size: var(--normal-font-size);
 }
 
 /*==================== ABOUT ====================*/
