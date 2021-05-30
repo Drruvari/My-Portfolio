@@ -792,10 +792,7 @@
                         </div>
                     </div>
 
-                    <form  class="contact__form grid" action="https://formsubmit.co/devcaydee@gmail.com" method="POST">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_subject" value="New Email!">
-                        <input type="hidden" name="_next" value="https://devcaydee.netlify.app">
+                    <form  class="contact__form grid" action="POST" data-netlify="true">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
@@ -808,7 +805,7 @@
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Project</label>
-                            <input type="text" class="contact__input" name="projectc">
+                            <input type="text" class="contact__input" name="project">
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
@@ -822,6 +819,11 @@
                                 <i class="uil uil-message button__icon"></i>
                             </a>
                         </button>
+                        </div>
+                        <div>
+                            <div class="field">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
                         </div>
                     </form>
                 </div>
