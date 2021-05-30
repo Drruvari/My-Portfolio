@@ -404,6 +404,10 @@ img {
   font-size: 1.3rem;
 }
 
+.button__button {
+  outline: none;
+}
+
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
