@@ -525,15 +525,15 @@ img {
   font-weight: var(--font-medium);
 }
 
-.skills__bar,
-.skills__percentage {
-  height: 5px;
+/*.skills__bar,*/
+/*.skills__percentage {*/
+/*height: 5px;
   /* border-radius: 0.25rem; */
-}
+/*}*/
 
-.skills__bar {
+/* .skills__bar {
   background-color: var(--first-color-lighter);
-}
+}*/
 
 .skills__percentage {
   display: block;
@@ -582,6 +582,10 @@ img {
 
 .skills__figma {
   width: 90%;
+}
+
+.skills__linux {
+  width: 80%;
 }
 
 .skills__close .skills__list {
