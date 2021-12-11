@@ -1,10 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-html {
-  max-width: 94%;
-}
-
 /*==================== VARIABLES CSS ====================*/
 :root {
   --header-height: 3rem;
@@ -1060,6 +1056,10 @@ img {
 @media screen and (max-width: 450px) {
   .home__img {
     width: 210px;
+  }
+
+  html {
+    max-width: 94%;
   }
 }
 
