@@ -224,3 +224,38 @@ const age = Math.abs(year - 1970);
 
 //display the calculated age
 document.getElementById('age').innerHTML = age;
+
+/*============================= EXPERIENCE =============================*/
+const exp_dob = new Date('10/07/2001');
+const exp_month_diff = Date.now() - exp_dob.getTime();
+const exp_dt = new Date(exp_month_diff);
+const exp_year = exp_dt.getUTCFullYear();
+const exp = Math.abs(year - 1991);
+
+//display the calculated age
+document.getElementById('exp').innerHTML = exp + '+';
+
+/*============================= GIT REPOS =============================*/
+const APIURL = 'https://api.github.com/users/';
+
+getUser('cayd33');
+
+async function getUser(username) {
+  const resp = await fetch(APIURL + username);
+  const respData = await resp.json();
+
+  userRepos(respData);
+
+  getRepos(username);
+}
+
+async function getRepos(username) {
+  const resp = await fetch(APIURL + username + '/repos');
+  const respData = await resp.json();
+
+  addReposToCard(respData);
+}
+
+function userRepos(user) {
+  document.getElementById('repos').innerHTML = `${user.public_repos}+`;
+}
