@@ -14,7 +14,7 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Caydee | Portfolio</title>
     <link rel="icon" type="image/svg" href="assets/img/brackets-curly.svg">
 </head>
@@ -22,7 +22,7 @@
 <body>
 
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
+    <header class="header" id="header" data-aos="fade-down">
         <nav class="nav container">
             <a href="#" class="nav__logo">Caydee</a>
             <div class="nav__menu" id="nav-menu">
@@ -78,7 +78,7 @@
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content grid">
-                    <div class="home__social">
+                    <div class="home__social" data-aos="fade-down-right">
                         <a href="https://www.linkedin.com/in/kejdi-balla-16136420b/" target="blank"
                             class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
@@ -91,11 +91,11 @@
                         </a>
                     </div>
 
-                    <div class="home__img">
+                    <div class="home__img" data-aos="fade-down-left">
                         <img src="assets/img/coding.png" alt="">
                     </div>
 
-                    <div class="home__data">
+                    <div class="home__data" data-aos="fade-down-right">
                         <h1 class="home__title">Hi, I am Kejdi</h1>
                         <h3 class="home__subtitle">Front-End Developer</h3>
                         <p class="home__description"></p>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
 
-                <div class="home__scroll">
+                <div class="home__scroll" data-aos="zoom-in">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
                         <span class="home__scroll-name">Scroll down</span>
@@ -117,13 +117,13 @@
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
-            <h2 class="section__title">About me</h2>
-            <span class="section__subtitle">My introduction</span>
+            <h2 class="section__title" data-aos="flip-down">About me</h2>
+            <span class="section__subtitle" data-aos="flip-down">My introduction</span>
 
             <div class="about__container container grid">
-                <img src="assets/img/workspace.png" alt="" class="about__img">
+                <img src="assets/img/workspace.png" alt="" class="about__img" data-aos="flip-left">
 
-                <div class="about__data">
+                <div class="about__data" data-aos="flip-right">
                     <p class="about__description">Hey it’s Caydee here. I’m a front-end developer, looking for new
                         experiences and opportunities. I code effectively and efficiently.
                         If you are seeking a web presence for your business or an employee looking to hire, you can get
@@ -156,10 +156,10 @@
 
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
+            <h2 class="section__title" data-aos="zoom-in-down">Skills</h2>
+            <span class="section__subtitle" data-aos="zoom-in-down">My technical level</span>
 
-            <div class="skills__container container grid">
+            <div class="skills__container container grid" data-aos="fade-up" data-aos-anchor-placement="top-bottom">>
                 <!--==================== SKILLS 1 ====================-->
                 <div class="skills__content skills__open">
                     <div class="skills__header">
@@ -707,7 +707,7 @@
         </section>
 
         <!--==================== PROJECT IN MIND ====================-->
-        <section class="project section">
+        <section class="project section" data-aos="fade-up" data-aos-anchor-placement="center-bottom">>
             <div class="project__bg">
                 <div class="project__container container grid">
                     <div class="project__data">
@@ -948,6 +948,11 @@
             minOpacity: 0.6,
             maxSize: 25
         });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
